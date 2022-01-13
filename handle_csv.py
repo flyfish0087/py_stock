@@ -54,7 +54,6 @@ def top_ten_turn_volume(sub_li):
 
 
 def request_to_list(r_flatten_list, group_step):
-
     r_stock_list = []
     # 分组处理, 步长group_step
     for i in range(0, len(r_flatten_list), group_step):
@@ -80,8 +79,8 @@ def request_to_list(r_flatten_list, group_step):
 
     return r_stock_list
 
-if __name__ == '__main__':
 
+if __name__ == '__main__':
     TEMPLATE = "template.html"
     INDEX_HTML = "index.html"
     CSV_PATH = "stock.csv"
@@ -117,4 +116,3 @@ if __name__ == '__main__':
             print(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
             print("=======success========")
             f.close()
-
